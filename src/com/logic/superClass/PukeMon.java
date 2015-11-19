@@ -12,8 +12,6 @@ public class PukeMon {
 	Skill sk3;
 	Skill sk4;
 	
-	
-	
 	public PukeMon(){
 		
 	}
