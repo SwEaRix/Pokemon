@@ -1,6 +1,12 @@
 package com;
 
 public final class Game {
+	private static final int WIDTH = 200;
+	private static final int HEIGHT = 150;
+	private static final int SCALE = 4;
+	private static final String TITLE = "PukeMon";
+	
+	
 	private static Game instance;
 	
 	
@@ -23,11 +29,26 @@ public final class Game {
 		return Game.instance;
 	}
 	
+	
+	
+	
+	private GameFrame frame;
+	
 	private Game() {
-		this.init();
+		new Initializer().start();
 	}
 	
 	private void init() {
+		//TODO hier kommt alles rein, was am start initialisiert werden soll - also rein grundlegende sachen, keine spielelemente/-inhalte
 		
+		this.frame = new GameFrame(Game.TITLE, Game.WIDTH*Game.SCALE, Game.HEIGHT*Game.SCALE);
+	}
+	
+	private class Initializer extends Thread {
+
+		@Override
+		public void run() {
+			Game.this.init();
+		}
 	}
 }
