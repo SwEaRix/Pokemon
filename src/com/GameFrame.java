@@ -1,7 +1,7 @@
 package com;
 
 import java.awt.Dimension;
-import java.awt.Graphics;
+import java.awt.Graphics2D;
 
 import javax.swing.JFrame;
 import javax.swing.JPanel;
@@ -26,7 +26,7 @@ public class GameFrame extends JFrame {
 		this.setVisible(true);
 	}
 	
-	public Graphics getPanelGraphics() {
-		return this.panel.getGraphics();
+	public Graphics2D getPanelGraphics() {
+		return (Graphics2D) this.panel.getGraphics();
 	}
 }

@@ -33,6 +33,7 @@ public final class Game {
 	
 	
 	private GameFrame frame;
+	private Locator locator;
 	
 	private Game() {
 		new Initializer().start();
@@ -42,6 +43,11 @@ public final class Game {
 		//TODO hier kommt alles rein, was am start initialisiert werden soll - also rein grundlegende sachen, keine spielelemente/-inhalte
 		
 		this.frame = new GameFrame(Game.TITLE, Game.WIDTH*Game.SCALE, Game.HEIGHT*Game.SCALE);
+		this.locator = new Locator();
+	}
+	
+	public Locator getLocator() {
+		return this.locator;
 	}
 	
 	private class Initializer extends Thread {
