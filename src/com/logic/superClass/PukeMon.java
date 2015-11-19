@@ -17,7 +17,7 @@ public class PukeMon {
 	}
 
 	public int getLife() {
-		return life;
+		return this.life;
 	}
 
 	public void setLife(int life) {
@@ -25,7 +25,7 @@ public class PukeMon {
 	}
 
 	public int getStrenght() {
-		return strenght;
+		return this.strenght;
 	}
 
 	public void setStrenght(int strenght) {
@@ -33,7 +33,7 @@ public class PukeMon {
 	}
 
 	public String getName() {
-		return name;
+		return this.name;
 	}
 
 	public void setName(String name) {
@@ -41,7 +41,7 @@ public class PukeMon {
 	}
 
 	public Item getIt() {
-		return it;
+		return this.it;
 	}
 
 	public void setIt(Item it) {
@@ -49,7 +49,7 @@ public class PukeMon {
 	}
 
 	public Skill getSk1() {
-		return sk1;
+		return this.sk1;
 	}
 
 	public void setSk1(Skill sk1) {
@@ -57,7 +57,7 @@ public class PukeMon {
 	}
 
 	public Skill getSk2() {
-		return sk2;
+		return this.sk2;
 	}
 
 	public void setSk2(Skill sk2) {
@@ -65,7 +65,7 @@ public class PukeMon {
 	}
 
 	public Skill getSk3() {
-		return sk3;
+		return this.sk3;
 	}
 
 	public void setSk3(Skill sk3) {
@@ -73,7 +73,7 @@ public class PukeMon {
 	}
 
 	public Skill getSk4() {
-		return sk4;
+		return this.sk4;
 	}
 
 	public void setSk4(Skill sk4) {

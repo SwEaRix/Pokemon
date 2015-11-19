@@ -17,7 +17,7 @@ public class Trainer {
 	}
 
 	public String getName() {
-		return name;
+		return this.name;
 	}
 
 	public void setName(String name) {
@@ -25,7 +25,7 @@ public class Trainer {
 	}
 
 	public int getPokeSpace() {
-		return pokeSpace;
+		return this.pokeSpace;
 	}
 
 	public void setPokeSpace(int pokeSpace) {
@@ -33,7 +33,7 @@ public class Trainer {
 	}
 
 	public int getPokeDollar() {
-		return pokeDollar;
+		return this.pokeDollar;
 	}
 
 	public void setPokeDollar(int pokeDollar) {
@@ -46,11 +46,11 @@ public class Trainer {
 	 *SwEaRix
 	 */
 	public void addPukeMon(PukeMon puke){
-		if (pm.size()+1 > this.pokeSpace){
+		if (this.pm.size()+1 > this.pokeSpace){
 			sc.fr("Leider haben sie keinen Platz mehr");
 		}
 		else{
-			pm.add(puke);
+			this.pm.add(puke);
 			sc.fr("Glückwunsch du hast "  + puke.getName() + " deinem Rucksack hinzugefügt.");
 		}
 	}
