@@ -1,17 +1,23 @@
-package com.logic.superClass;
+package com.logic.trainer;
 
 import java.util.ArrayList;
 
-public class Trainer {
+import com.logic.superClass.Item;
+import com.logic.superClass.PukeMon;
+import com.logic.superClass.Trainer;
+import com.logic.superClass.sc;
 
-	String name;
-	int pokeSpace;
-	int pokeDollar;
+public class TrainerTest extends Trainer{
+
+	String name = "Maurice";
+	int pokeSpace = 2;
+	int pokeDollar = 0;
+	
 	
 	ArrayList <PukeMon> pm = new ArrayList<>();
 	ArrayList <Item> it = new ArrayList<>();
 	
-	public Trainer(){
+	public TrainerTest(){
 		
 	}
 
@@ -45,8 +51,8 @@ public class Trainer {
 	 *SwEaRix
 	 */
 	public void addPukeMon(PukeMon puke){
-		if (this.pm.size() > this.pokeSpace){
-			sc.fr("Leider haben sie keinen Platz mehr");
+		if (this.pm.size()+1 > this.pokeSpace){
+			sc.fr("Leider haben sie keinen Platz mehr für " + puke.getName());
 		}
 		else{
 			this.pm.add(puke);
